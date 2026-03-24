@@ -1,0 +1,188 @@
+/* Configuración General */
+body {
+    background-color: #050505; /* Negro profundo */
+    color: #D4AF37;           /* Dorado metálico */
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado King Royal */
+#header {
+    background: linear-gradient(145deg, #1a1a1a, #000);
+    border-bottom: 3px solid #D4AF37;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0px 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+#header h1 {
+    font-style: italic; 
+    font-size: 3.5em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* Menú de Navegación */
+#menu {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+#menu a {
+    color: #D4AF37;
+    text-decoration: none;
+    margin: 0 25px;
+    font-style: italic;
+    font-size: 1.1em;
+    transition: 0.4s;
+}
+
+#menu a:hover {
+    color: #FFF;
+    text-shadow: 0 0 15px #D4AF37;
+}
+
+/* Capa de Contenido */
+#contenido {
+    width: 85%;
+    margin: 40px auto;
+    padding: 50px;
+    background: rgba(15, 15, 15, 0.95);
+    border: 1px gold double; /* Doble borde dorado */
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Galería de Rolls-Royce */
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.carro img {
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #D4AF37;
+    border-radius: 15px;
+    transition: 0.6s;
+    filter: brightness(0.8);
+}
+
+/* Efectos requeridos*/
+.carro img:hover {
+    filter: brightness(1.2);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.6);
+}
+
+/* Estilo para el mensaje de King Royal Bogotá */
+.mensaje-lujo {
+    font-size: 1.4em;
+    line-height: 1.8;
+    color: #FFF;           /* Texto en plata para que resalte el dorado */
+    font-style: italic;    /* Letra cursiva elegante */
+    margin: 30px auto;
+    max-width: 800px;
+    text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.5); /* Sombra dorada suave */
+}
+
+.mensaje-lujo b {
+    color: #D4AF37;       /* Las palabras Bogotá y sesiones de fotos en ORO */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;       /* Esto hace que los carros bajen a la segunda fila */
+    justify-content: center; 
+    gap: 40px;             /* Espacio elegante entre cada carro */
+    padding: 20px;
+}
+
+.carro {
+    width: 300px;          /* Ancho fijo para que todos se vean parejos */
+    text-align: center;
+    transition: 0.5s;
+}
+/* Menú Desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    color: #D4AF37;
+    text-decoration: none;
+    margin: 0 25px;
+    font-style: italic;
+    font-size: 1.1em;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+    color: #FFF;
+    text-shadow: 0 0 15px #D4AF37;
+}
+
+/* Menú desplegable oculto por defecto */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.3);
+    padding: 12px 0;
+    z-index: 1;
+    border: 1px solid #D4AF37;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: #D4AF37;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-style: italic;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #1a1a1a;
+    color: #FFF;
+    text-shadow: 0 0 10px #D4AF37;
+}
+/* Efecto hover en imágenes de servicios */
+#contenido img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contenido img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+/* Efecto hover en imágenes de servicios */
+#contenido img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contenido img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
